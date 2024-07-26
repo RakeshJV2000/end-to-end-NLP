@@ -27,7 +27,7 @@ __version__ = "0.0.1"
 
 REPO_NAME = "end-to-end-NLP"
 AUTHOR_USER_NAME = "Rakesh"
-SRC_REPO = "end-to-end-NLP-textSummarizer"
+SRC_REPO = "textSummarizer"
 AUTHOR_EMAIL = "rakeshjv2000@gmail.com"
 
 
@@ -37,5 +37,6 @@ setup(
     author=AUTHOR_USER_NAME,
     author_email=AUTHOR_EMAIL,
     description="A python web app for text summarization",
-    packages=find_packages()
+    package_dir={"": "src"},
+    packages=find_packages(where="src")
 )
