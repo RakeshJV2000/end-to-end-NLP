@@ -2,7 +2,6 @@ import os
 import urllib.request as request
 import zipfile
 from textSummarizer.logging import logger
-from textSummarizer.utils.common import get_size
 from pathlib import Path
 from textSummarizer.entity import DataIngestionConfig
 
@@ -21,7 +20,7 @@ class DataIngestion:
             )
             logger.info(f"{filename} download! with following info: \n{headers}")
         else:
-            logger.info(f"File already exists of size: {get_size(Path(self.config.local_data_file))}")  
+            logger.info(f"File already exists")
 
         
     
