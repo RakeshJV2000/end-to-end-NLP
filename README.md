@@ -1,6 +1,7 @@
 # end-to-end-NLP
 
 - Trained the Google Pegasus transformer model for text summarization utilizing Hugging Face Transformer libraries.
+- Used the same Google Pegasus auto tokenizer for converting words into tokens.
 - Ensured code reusability through modular design for all stages, including data ingestion, transformation, model training, and evaluation.
 - Developed a user-friendly front-end application using Fast API to allow users to input data and interact with the trained model.
 
